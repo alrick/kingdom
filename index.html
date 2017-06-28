@@ -5,7 +5,14 @@
     <title>kingdom</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <p>
+        <router-link :to="{ name: 'knight', params: { name: 'deoord' }}">Go to Deoord</router-link>
+      </p>
+      <transition name="fade">
+        <router-view></router-view>
+      </transition>
+    </div>
     <script src="/dist/build.js"></script>
   </body>
 </html>
